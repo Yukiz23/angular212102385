@@ -54,8 +54,17 @@
       >
         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-        <li class="nav-item menu-open">
-          <a href="#" class="nav-link active">
+        <li
+          class="nav-item has treeview {{
+            moduleName == 'dashboard' ? 'menu-open' : ''
+          }}{{ moduleName == 'dashboard2' ? 'menuopen' : '' }}"
+        >
+          <a
+            href="#"
+            class="nav-link {{ moduleName == 'dashboard' ? 'active' : '' }}{{
+              moduleName == 'dashboard2' ? 'active' : ''
+            }}"
+          >
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
@@ -95,6 +104,18 @@
               >
                 <i class="far fa-circle nav-icon"></i>
                 <p>Dashboard v3</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="mahasiswa"
+                class="nav-link {{
+                  moduleName == 'mahasiswa' ? 'activate' : ''
+                }}
+              "
+              >
+                <i class="nav-icon fas fa-th"></i>
+                <p>Mahasiswa</p>
               </a>
             </li>
           </ul>
