@@ -17,13 +17,13 @@
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
         <img
-          src="assets/dist/img/user2-160x160.jpg"
+          src="assets/dist/img/VISAS.jpg"
           class="img-circle elevation-2"
           alt="User Image"
         />
       </div>
       <div class="info">
-        <a href="#" class="d-block">Alexander Pierce</a>
+        <a href="#" class="d-block">Michaellino Omega Fernando</a>
       </div>
     </div>
 
@@ -118,6 +118,31 @@
                 <p>Mahasiswa</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a
+                [routerLink]="['/cuaca']"
+                routerLinkActive="router-link-active"
+                class="nav-link {{ moduleName == 'cuaca' ? 'active' : '' }}"
+              >
+                <i class="nav-icon fas fa-cloud-rain"></i>
+                <p>Cuaca</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                [routerLink]="['/forex']"
+                routerLinkActive="router-link-active"
+                class="nav-link {{ moduleName == 'forex' ? 'active' : '' }}"
+              >
+                <i class="nav-icon far fa-money-bill-alt"></i>
+                <p>Forex</p>
+              </a>
+            </li>
+            <!--<li class="'nav-item">  
+              <button class="btn btn-primary btn-block" (click)="logOut()">
+                Logout
+              </button>
+            </li>-->
           </ul>
         </li>
         <li class="nav-item">
